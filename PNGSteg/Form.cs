@@ -12,9 +12,9 @@ using System.Collections;
 
 namespace PNGSteg
 {
-    public partial class Form1 : Form
+    public partial class Form : System.Windows.Forms.Form
     {
-        public Form1()
+        public Form()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace PNGSteg
         bool imgLoaded = false;
         public void LoadImg()
         {
-            openFileDialog1.FileName = "turkishEmbassy.png";
+            openFileDialog1.FileName = "";
             openFileDialog1.Filter = "Image files (*.png)|*.png";
             openFileDialog1.InitialDirectory = desktopPath;
 
